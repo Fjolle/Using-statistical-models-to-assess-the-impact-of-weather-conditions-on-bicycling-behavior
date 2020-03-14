@@ -12,6 +12,7 @@ TfL makes available the historical bikesharing usage data (e.g. start and end ti
 
 ![Live bike dock information](https://github.com/albagjonbalajdc/Modeling-bike-journeys-and-weather-in-London/blob/master/table_2.png)
 
+# **Bike stations**
 The bar chart below shows the ten largest bike stations in London in terms of bike capacity.
 
 ![Biggest bike stations](https://github.com/albagjonbalajdc/Modeling-bike-journeys-and-weather-in-London/blob/master/Unknown-2.png)
