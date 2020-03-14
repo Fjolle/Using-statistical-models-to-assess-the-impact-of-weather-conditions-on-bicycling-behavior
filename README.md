@@ -6,9 +6,11 @@ I provide the codes and technical details for generating the insights below [her
 
 # **Data**
 
-TfL makes available the historical bikesharing usage data (e.g. start and end time of the bike trip, bike id, and station name) in the form of csv files in the following [website](https://cycling.data.tfl.gov.uk). In addition, I use the [bike point API](https://api.tfl.gov.uk/swagger/ui/index.html?url=/swagger/docs/v1#!/BikePoint/BikePoint_GetAll) to add real time information on bike docks across London, including latitute, longitutde, capacity, and available bikes). The historical bikesharing usage dataset includes 10,138,355 bike trips from Janaury 1, 2019 to December 31, 2019.
+TfL makes available the historical bikesharing usage data (e.g. start and end time of the bike trip, bike id, and station name) in the form of csv files in the following [website](https://cycling.data.tfl.gov.uk). In addition, I use the [bike point API](https://api.tfl.gov.uk/swagger/ui/index.html?url=/swagger/docs/v1#!/BikePoint/BikePoint_GetAll) to add real time information on bike docks across London, including latitute, longitutde, capacity, and available bikes). The bike usage dataset includes 10,138,355 bike trips from Janaury 1, 2019 to December 31, 2019 with attributes for bike trip duration, start trip date and time, end trip date and time, start station id and end station id as in the table below.
 
 ![Journey Data](https://github.com/albagjonbalajdc/Modeling-bike-journeys-and-weather-in-London/blob/master/journey_data.png)
+
+
 
 In order to analyze the imapct of unfavourable weather conditions such as rain, I obtain historical weather data from the [Dark Sky API](https://darksky.net/dev/account).  
 
