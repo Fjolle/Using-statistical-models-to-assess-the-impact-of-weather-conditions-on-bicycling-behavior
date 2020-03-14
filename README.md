@@ -12,7 +12,7 @@ TfL makes available the historical bikesharing usage data (e.g. start and end ti
 
 ![Live bike dock information](https://github.com/albagjonbalajdc/Modeling-bike-journeys-and-weather-in-London/blob/master/table_2.png)
 
-
+![Biggest bike stations](https://github.com/albagjonbalajdc/Modeling-bike-journeys-and-weather-in-London/blob/master/Unknown-2.png)
 
 In order to analyze the imapct of unfavourable weather conditions such as rain on bike journeys, I obtain historical weather hourly observations for temperature, precipitation, humidity, wind speed, and visibility from the [Dark Sky API](https://darksky.net/dev/account).
 
