@@ -21,7 +21,7 @@ The bar chart below shows the ten largest bike stations in London in terms of bi
 
 The  chart below shows the distribution of hourly bike rentals by day of the week. A distinct pattern can be seen between bike usage during the weekend and the week. During the week days, bike usage is highest between 7am and 9am.Weekend bike usage peaks between noon and 2pm.
 
-
+![Distribution](https://github.com/albagjonbalajdc/Modeling-bike-journeys-and-weather-in-London/blob/master/distribution.png)
 
 In order to analyze the imapct of unfavourable weather conditions such as rain on bike journeys, I obtain historical weather hourly observations for temperature, precipitation, humidity, wind speed, and visibility from the [Dark Sky API](https://darksky.net/dev/account).
 
