@@ -25,6 +25,6 @@ The  chart below shows the distribution of hourly bike rentals by day of the wee
 
 In order to analyze the imapct of unfavourable weather conditions such as rain on bike journeys, I obtain historical weather hourly observations for temperature, precipitation, humidity, wind speed, and visibility from the [Dark Sky API](https://darksky.net/dev/account).
 
+# **Correlation between average number of daily  bike journeys and temperature**
 
-
-![This is a test](https://github.com/albagjonbalajdc/Modeling-bike-journeys-and-weather-in-London/blob/master/Unknown.png)
+![correlation](https://github.com/albagjonbalajdc/Modeling-bike-journeys-and-weather-in-London/blob/master/correlation.png)
