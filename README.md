@@ -30,3 +30,5 @@ In order to analyze the imapct of unfavourable weather conditions such as rain o
 Here, we  depict the relationship between daily number of bike trips and average daily temperature, which appears farily linear. Bike trips pick up as temperature increases. We can notice a few outlier days explained by adverse weather impacts that day. On June 12, 2019, for exmaple, there were only xx trips, because ... A drop in bike ridership can be seen during the period of extreme heat between July xx, 2019 and August xx, 2019. Days with low ridership can also be explained for reasons other than weather, such as only xx trips on Christmas Day.  
 
 ![correlation](https://github.com/albagjonbalajdc/Modeling-bike-journeys-and-weather-in-London/blob/master/correlation.png)
+
+
