@@ -6,7 +6,8 @@ I provide the codes and technical details for generating the insights below [her
 
 # **Data**
 
-TfL makes available the historical bikesharing usage data (e.g. start and end time of the bike trip, bike id, and station name) in the form of csv files in the following [website](https://cycling.data.tfl.gov.uk). In addition, I use the [bike point API](https://api.tfl.gov.uk/swagger/ui/index.html?url=/swagger/docs/v1#!/BikePoint/BikePoint_GetAll) to add real time information on bike docks across London, including latitute, longitutde, capacity, and available bikes). The bike usage dataset includes 10,138,355 bike trips from Janaury 1, 2019 to December 31, 2019 with attributes for bike trip duration, start trip date and time, end trip date and time, start station id and end station id as in the table below.
+TfL makes available the historical bikesharing usage data (e.g. start and end time of the bike trip, bike id, and station name) in the form of csv files in the following [website](https://cycling.data.tfl.gov.uk). In addition, I use the [bike point API](https://api.tfl.gov.uk/swagger/ui/index.html?url=/swagger/docs/v1#!/BikePoint/BikePoint_GetAll) to add real time information on bike docks across London, including latitute, longitutde, capacity, and available bikes). The bike usage dataset includes 10,138,355 bike trips from Janaury 1, 2019 to December 31, 2019 with attributes for bike trip duration, start trip date and time, end trip date and time, start station id and end station id as in the table below. Hourly weather data from Janaury 1, 2019 to December 1, 2019 for temperature, precipitation, humidity, wind speed, and visibility were obtained from the [Dark Sky API](https://darksky.net/dev/account).
+
 
 ![Journey Data](https://github.com/albagjonbalajdc/Modeling-bike-journeys-and-weather-in-London/blob/master/journey_data.png)
 
@@ -23,7 +24,7 @@ The  chart below shows the distribution of hourly bike rentals by day of the wee
 
 ![Distribution](https://github.com/albagjonbalajdc/Modeling-bike-journeys-and-weather-in-London/blob/master/distribution.png)
 
-In order to analyze the imapct of unfavourable weather conditions such as rain on bike journeys, I obtain historical weather hourly observations for temperature, precipitation, humidity, wind speed, and visibility from the [Dark Sky API](https://darksky.net/dev/account).
+In order to analyze the imapct of unfavourable weather conditions such as rain on bike ridership, weather observations for each trip start date and time were merged with the bike journeys based on date and time. Bike trips were collapsed by hour, obtaining the sum of bike trips and duration of trips per hour. 
 
 # **Relationship between average number of daily  bike journeys and temperature**
 
@@ -32,3 +33,5 @@ The two charts below depict the relationship between daily number of bike trips 
 ![correlation](https://github.com/albagjonbalajdc/Modeling-bike-journeys-and-weather-in-London/blob/master/correlation.png)
 
 ![correlation](https://github.com/albagjonbalajdc/Modeling-bike-journeys-and-weather-in-London/blob/master/relationship%20between%20ridership%20and%20temperature.png)
+
+
