@@ -31,4 +31,4 @@ The two charts below depict the relationship between daily number of bike trips 
 
 ![correlation](https://github.com/albagjonbalajdc/Modeling-bike-journeys-and-weather-in-London/blob/master/correlation.png)
 
-
+![correlation](https://github.com/albagjonbalajdc/Modeling-bike-journeys-and-weather-in-London/blob/master/relationship%20between%20ridership%20and%20temperature.png)
