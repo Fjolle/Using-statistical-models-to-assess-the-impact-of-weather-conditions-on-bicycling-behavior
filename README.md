@@ -12,7 +12,7 @@ TfL makes available the historical bikesharing usage data (e.g. start and end ti
 
 I begin the analysis with the discovery of some general trends in the data which will inform the hypothesis creation and guide the analysis. 
 
-Here I illustrate the ten largest bike stations in London in terms of bike capacity.
+Here I illustrate the ten largest bike stations in London in terms of bike capacity which is obtained after sorting the dataset by top counts and truncating it.
 
 ![Biggest bike stations](https://github.com/albagjonbalajdc/Modeling-bike-journeys-and-weather-in-London/blob/master/Unknown-2.png)
 
