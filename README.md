@@ -20,7 +20,7 @@ Distribution charts are a useful means to gain a comprehensive understaning of t
 
 The  graph below illustrates the distribution of bike rentals by day of the week and hour of the day. A distinct pattern can be seen between bike usage during the weekend and  weekdays. During  weekdays, bike usage is highest between 7 and 9 in the morning and between 17 and 20 in the afternoon. Weekend bike usage peaks between noon and 14 in the afternoon. This pattern of bike usage could be explained by the fact that weekday bike usage is mostly associated with commuting to and from work, whereas weekend usage is mostly associated with middle of the day leisure trips.   
 
-![Distribution](https://github.com/albagjonbalajdc/Modeling-bike-journeys-and-weather-in-London/blob/master/distribution.png)
+![Distribution](https://github.com/albagjonbalajdc/Modeling-bike-journeys-and-weather-in London/blob/master/bike%20usage%20by%20day%20of%20the%20week%20and%20hour%20of%20the%20day.png)
 
 In order to analyze the imapct of unfavourable weather conditions such as rain on bike ridership, weather observations for each trip start date and time were merged with the bike journeys based on date and time. Bike trips were collapsed by hour, obtaining the sum of bike trips and duration of trips per hour. 
 
