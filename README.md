@@ -16,6 +16,12 @@ Here I illustrate the ten largest bike stations in London in terms of bike capac
 
 ![Biggest bike stations](https://github.com/albagjonbalajdc/Modeling-bike-journeys-and-weather-in-London/blob/master/Unknown-2.png)
 
+There are two stations that stand out as dominant sources of starting bike trips during the weekdays, that is King's Cross railway station and the London Waterloo railstation [provide some intution why are they so large?]. In contrast, during weekends, most stations show little activitiy in terms of bike trips compared to weekdays, with the exception of Hyde Park and Kensington Gardens to a certain extent. This pattern is not surprising, King's Cross and Waterloo being large and important statiston in the London transporation are dominant sources of bikes in the morning, whereas xx and xx statistions are the largest receiving stations. This relationship inverses in the evenings. These statistions are home to [government building] and [financial center]. On the other hand, stations around Hyde Park and Kensignton Gardens are entertainment hubs for Londoners, hence the large bike traffic on the weekend. 
+
+To illustrate the analysis above, I aggregate the number of rentals per station, and segment bike rentals by weekday and weekend to obtain the graph below
+
+![Biggest bike stations](https://github.com/albagjonbalajdc/Modeling-bike-journeys-and-weather-in-London/blob/master/Unknown-2.png)
+
 Distribution charts are a useful means to gain a comprehensive understaning of trends and outliers over time. 
 
 The  graph below illustrates the distribution of bike rentals by day of the week and hour of the day. A distinct pattern can be seen between bike usage during the weekend and  weekdays. During  weekdays, bike usage is highest between 7 and 9 in the morning and between 17 and 20 in the afternoon. Weekend bike usage peaks between noon and 14 in the afternoon. This pattern of bike usage could be explained by the fact that weekday bike usage is mostly associated with commuting to and from work, whereas weekend usage is mostly associated with middle of the day leisure trips.   
