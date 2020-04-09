@@ -26,7 +26,7 @@ This pattern is not surprising, King's Cross and Waterloo being large and import
 
 This is best illustrated by the two bar race charts below which depict the top source and receiving stations by time of the day. 
 
-![Bar race chart 1](https://github.com/albagjonbalajdc/Modeling-bike-journeys-and-weather-in-London/blob/master/test.gif)
+![Bar race chart 1](https://github.com/albagjonbalajdc/Modeling-bike-journeys-and-weather-in-London/blob/master/animation.gif)
 
 Distribution charts are a useful means to gain a comprehensive understaning of trends and outliers over time. 
 
