@@ -20,7 +20,7 @@ There are two stations that stand out as dominant sources of starting bike trips
 
 To illustrate the analysis above, I aggregate the number of rentals per station, and segment bike rentals by weekday and weekend to obtain the graph below
 
-![Biggest bike stations](https://github.com/albagjonbalajdc/Modeling-bike-journeys-and-weather-in-London/blob/master/Number%20of%20rentals%20per%20station.png)
+![Biggest bike stations](https://github.com/albagjonbalajdc/Modeling-bike-journeys-and-weather-in-London/blob/master/bike%20trips%20by%20weekday%20and%20weekend.png)
 
 Distribution charts are a useful means to gain a comprehensive understaning of trends and outliers over time. 
 
