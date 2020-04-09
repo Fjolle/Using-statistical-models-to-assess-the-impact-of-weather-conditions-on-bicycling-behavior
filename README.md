@@ -8,7 +8,7 @@ I provide the codes and technical details for generating the insights below [her
 
 TfL makes available the historical bikesharing usage data (e.g. start and end time of the bike trip, bike id, and station name) in the form of csv files in the following [website](https://cycling.data.tfl.gov.uk). In addition, I use the [bike point API](https://api.tfl.gov.uk/swagger/ui/index.html?url=/swagger/docs/v1#!/BikePoint/BikePoint_GetAll) to add real time information on bike docks across London, including latitute, longitutde, capacity, and available bikes. The bike usage dataset includes 10,138,355 bike trips from Janaury 1, 2019 to December 31, 2019 with attributes for bike trip duration, start trip date and time, end trip date and time, start station id and end station id as in the table below. Hourly weather data from Janaury 1, 2019 to December 31, 2019 for temperature, precipitation, humidity, wind speed, and visibility were obtained from the [Dark Sky API](https://darksky.net/dev/account).
 
-# **Exploratory Data Analysis**
+# **Exploratory Data Analysis of Bike Journeys**
 
 I begin the analysis with the discovery of some general trends in the data which will inform the hypothesis creation and guide the analysis. 
 
@@ -29,17 +29,19 @@ This is best illustrated by the two bar race charts below which depict the top s
 ![Bar race chart 1](https://github.com/albagjonbalajdc/Modeling-bike-journeys-and-weather-in-London/blob/master/animation.gif)
 ![Bar race chart 2](https://github.com/albagjonbalajdc/Modeling-bike-journeys-and-weather-in-London/blob/master/animation2.gif)
 
-Distribution charts are a useful means to gain a comprehensive understaning of trends and outliers over time. 
+Distribution charts are a useful way to gain a comprehensive understaning of trends and outliers over time. 
 
 The  graph below illustrates the distribution of bike rentals by day of the week and hour of the day. A distinct pattern can be seen between bike usage during the weekend and  weekdays. During  weekdays, bike usage is highest between 7 and 9 in the morning and between 17 and 20 in the afternoon. Weekend bike usage peaks between noon and 14 in the afternoon. This pattern of bike usage could be explained by the fact that weekday bike usage is mostly associated with commuting to and from work, whereas weekend usage is mostly associated with middle of the day leisure trips.   
 
 ![Distribution](https://github.com/albagjonbalajdc/Modeling-bike-journeys-and-weather-in-London/blob/master/distribution_bike_trips.png)
 
-In order to analyze the imapct of unfavourable weather conditions such as rain on bike ridership, weather observations for each trip start date and time were merged with the bike journeys based on date and time. Bike trips were collapsed by hour, obtaining the sum of bike trips and duration of trips per hour. 
+One issue that impacts biking as a mode of transporation that doesn't impair other modes of transporation to the same extent, is weather conditions such as rainfall, snow, humidity, wind, fog and extreme temperatures. The research below analyzes the impact of weather on the use of London Santander bikeshare system. Hourly weather observations for temperature, rain, and humidity are merged with the hourly bike usage data. Bike trips were collapsed by hour, obtaining the sum of bike trips and average duration of trips per hour. I use a statistical model to analyze the bicycling behavior under different weather conditions in London while controlling for a range of variables. 
 
-# **Relationship between average number of daily  bike journeys and temperature**
+Descriptive statistics of the dependent and independet variables are presented in Table 1. For the dependent variable analyzed, there was an average 2266 trips per hour with a standard deviation of 1304. The average trip duration was 19.6 minutes with a range of as short as 8 minutes to 514 minutes. Independent variables included both weather related variables and non-weather related control variables. London recorded a wide range of temperatures during 2019 spanning from -3.2 °C to 37 °C. The average humidity is London during 2019 was 65% and a standard deviation of 17%. The average wind speed was 8 MPH defined as a "gentle breeze". Rain in London was observed 16% of the year. 
 
-The two charts below depict the relationship between daily number of bike trips and average daily temperature, which appears farily linear. Bike trips pick up as temperature increases. We can notice a few outlier days explained by adverse weather impacts that day. On June 12, 2019, for exmaple, there were only xx trips, because ... A drop in bike ridership can be seen during the period of extreme heat between July xx, 2019 and August xx, 2019. Days with low ridership can also be explained for reasons other than weather, such as only xx trips on Christmas Day.  
+# *Preliminary analysis of the relationship between bike journeys and weather*
+
+The relationship between daily number of bike trips and average daily temperature is depicted in the figure below. Bike trips pick up as the temperatures increase. We can notice a few outlier days explained by adverse weather impacts that day. June 12, 2019, for exmaple, only saw xx trips, because ... A drop in bike ridership can be seen during the period of extreme heat between July xx, 2019 and August xx, 2019. Days with low ridership can also be explained for reasons other than weather, such as only xx trips on Christmas Day.  
 
 ![correlation](https://github.com/albagjonbalajdc/Modeling-bike-journeys-and-weather-in-London/blob/master/relationship%20between%20bike%20usage%20and%20temperature.png)
 
