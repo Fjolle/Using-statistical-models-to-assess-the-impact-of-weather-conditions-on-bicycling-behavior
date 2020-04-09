@@ -20,9 +20,15 @@ There are two stations that stand out as dominant sources of starting bike trips
 
 To illustrate this, I aggregate the number of rentals per station, and segment bike rentals by weekday and weekend to obtain the graph below
 
-![Biggest bike stations](https://github.com/albagjonbalajdc/Modeling-bike-journeys-and-weather-in-London/blob/master/bike%20trips%20by%20weekday%20and%20weekend.png)
+![Bike journeys by weekday and weekend](https://github.com/albagjonbalajdc/Modeling-bike-journeys-and-weather-in-London/blob/master/bike%20trips%20by%20weekday%20and%20weekend.png)
 
-This pattern is not surprising, King's Cross and Waterloo being large and important stations in the London transporation are dominant sources of bikes in the morning, whereas Bank, Holborn, Liverpool, and Soho stations are the largest receiving bike stations in the morning. These stations are located in the city center where activity peaks in the early morning hours, including the finance center and the Westminister government buildings. This relationship inverses in the evenings, when the two large railway stations become the largest receiving bike stations and the city center stations the largest source stations.  
+This pattern is not surprising, King's Cross and Waterloo being large and important stations in the London transporation are dominant sources of bikes in the morning, whereas Bank, Holborn, Liverpool, and Soho stations are the largest receiving bike stations in the morning. These stations are located in the city center where activity peaks in the early morning hours, including the finance center and the Westminister government buildings. This relationship inverses in the evenings, when the two large railway stations become the largest receiving bike stations and the city center stations the largest source stations.
+
+This is best illustrated by the two bar race charts below which depict the top source and receiving stations by time of the day. 
+
+![Bar race chart 1]()
+
+![Bar race chart 2]()
 
 Distribution charts are a useful means to gain a comprehensive understaning of trends and outliers over time. 
 
