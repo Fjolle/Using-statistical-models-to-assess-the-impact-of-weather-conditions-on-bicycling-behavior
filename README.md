@@ -12,15 +12,17 @@ TfL makes available the historical bikesharing usage data (e.g. start and end ti
 
 I begin the analysis with the discovery of some general trends in the data which will inform the hypothesis creation and guide the analysis. 
 
-Here I illustrate the ten largest bike stations in London in terms of bike capacity which is obtained after sorting the dataset by top counts and truncating it.
+Here I illustrate the ten largest bike stations in London in terms of bike capacity which is obtained by sorting the dataset by top counts and truncating it.
 
 ![Biggest bike stations](https://github.com/albagjonbalajdc/Modeling-bike-journeys-and-weather-in-London/blob/master/Unknown-2.png)
 
-There are two stations that stand out as dominant sources of starting bike trips during the weekdays, that is King's Cross railway station and the London Waterloo railstation [provide some intution why are they so large?]. In contrast, during weekends, most stations show little activitiy in terms of bike trips compared to weekdays, with the exception of Hyde Park and Kensington Gardens to a certain extent. This pattern is not surprising, King's Cross and Waterloo being large and important statiston in the London transporation are dominant sources of bikes in the morning, whereas xx and xx statistions are the largest receiving stations. This relationship inverses in the evenings. These statistions are home to [government building] and [financial center]. On the other hand, stations around Hyde Park and Kensignton Gardens are entertainment hubs for Londoners, hence the large bike traffic on the weekend. 
+There are two stations that stand out as dominant sources of starting bike trips during the weekdays, that is King's Cross railway station and the London Waterloo railstation. In contrast, during weekends, most stations show little activitiy in terms of bike trips compared to weekdays, with the exception of Hyde Park and Kensington Gardens to a certain extent.Stations around Hyde Park and Kensignton Gardens are entertainment hubs for Londoners, explaining the large bike traffic on the weekend.
 
-To illustrate the analysis above, I aggregate the number of rentals per station, and segment bike rentals by weekday and weekend to obtain the graph below
+To illustrate this, I aggregate the number of rentals per station, and segment bike rentals by weekday and weekend to obtain the graph below
 
 ![Biggest bike stations](https://github.com/albagjonbalajdc/Modeling-bike-journeys-and-weather-in-London/blob/master/bike%20trips%20by%20weekday%20and%20weekend.png)
+
+This pattern is not surprising, King's Cross and Waterloo being large and important stations in the London transporation are dominant sources of bikes in the morning, whereas Bank, Holborn, Liverpool, and Soho stations are the largest receiving bike stations in the morning. These stations are located in the city center where activity peaks in the early morning hours, including the finance center and the Westminister government buildings. This relationship inverses in the evenings, when the two large railway stations become the largest receiving bike stations and the city center stations the largest source stations.  
 
 Distribution charts are a useful means to gain a comprehensive understaning of trends and outliers over time. 
 
