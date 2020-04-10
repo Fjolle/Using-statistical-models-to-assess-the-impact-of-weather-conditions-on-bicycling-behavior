@@ -45,6 +45,6 @@ The relationship between daily number of bike trips and average daily temperatur
 
 ![correlation](https://github.com/albagjonbalajdc/Modeling-bike-journeys-and-weather-in-London/blob/master/relationship%20between%20bike%20usage%20and%20temperature.png)
 
-![correlation](https://github.com/albagjonbalajdc/Modeling-bike-journeys-and-weather-in-London/blob/master/scatter%20plot.png)
+![correlation](https://github.com/albagjonbalajdc/Modeling-bike-journeys-and-weather-in-London/blob/master/scatterplot.png)
 
 
