@@ -2,6 +2,8 @@
 1. [Overview](#overview) 
 2. [Data](#data) 
 3. [Exploratory Data Analysis of Bike Journeys](#exploratory)
+4. [Preliminary analysis of the relationship between bike journeys and weather](#Preliminary)
+5. [Analysis of regression results](#Analysis)
 
 <a name="overview"></a>
 ### Overview
@@ -41,7 +43,7 @@ I provide the codes and technical details for generating the insights below [her
 
   For the dependent variable analyzed, there was an average 2266 trips per hour with a standard deviation of 1304. The average trip duration was 19.6 minutes with a range of as short as 8 minutes to 514 minutes. Independent variables included both weather related variables and non-weather related control variables. London recorded a wide range of temperatures during 2019 spanning from -3.2 °C to 37 °C. The average humidity is London during 2019 was 65% and a standard deviation of 17%. The average wind speed was 8 MPH defined as a "gentle breeze". Rain in London was observed 16% of the year. 
 
-<a name="Preliminary analysis of the relationship between bike journeys and weather"></a>
+<a name="Preliminary"></a>
 ### Preliminary analysis of the relationship between bike journeys and weather 
 
   The relationship between daily number of bike trips and average daily temperature is depicted in the figure below. Bike trips pick up as the temperatures increase. We can notice a few outlier days explained by adverse weather impacts that day. June 12, 2019, for exmaple, only saw xx trips, because ... A drop in bike ridership can be seen during the period of extreme heat between July xx, 2019 and August xx, 2019. Days with low ridership can also be explained for reasons other than weather, such as only xx trips on Christmas Day.  
@@ -56,7 +58,7 @@ I provide the codes and technical details for generating the insights below [her
   
 Two dependent variables are analyzed: (1) average trip duration and (2) number of bike trips. To analyze the relationship between average trip duration (dependent variable) and weather (independent variable) I perform the ordinary least squares regression model. To analyze the impact of weather on number of bike trips, I perform a logistic regression model. Estimates of the parameteres in the average trip duration model are used to determine the change in trip duration in minutes associated with each parameter. In the logistic regression each estimate is associated with a xx percent change in number of bike trips. The regression results from the Ordinary Least Sqaures model are shown in Table 1. The Logistic regression model of number of trips is shown in Table 2. 
 
-<a name="Analysis of regression results"></a>
+<a name="Analysis"></a>
 ### Analysis of regression results
 
 Temperature enters the regression as a dummy variable in 5°C ranges as we don't expect the relationship between temperature and cycling behavior to be linear. Coefficients show that temperatures between -3 and through the 10°C range are all significantly correlated (p<.01) with shorter average trip duration compared to when the temperature is in the 10-15°C range, ceteris paribus. When temperatures range between -3 and 10°C, average trips times are 5.4 minutes as opposed to 17.8 minutes, holding all the other variables constant. Temperatures in the range 25-35°C were positively correlated with increasing trip durations, but not statistically significant.
