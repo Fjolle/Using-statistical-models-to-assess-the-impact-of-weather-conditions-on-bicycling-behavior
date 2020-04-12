@@ -4,19 +4,19 @@
 3. [Exploratory Data Analysis of Bike Journeys](#exploratory)
 
 <a name="overview"></a>
-# Overview
+### Overview
 
   Bike sharing systems have ploriferated in cities around the world as one of the most environmental friendly transport modes. These digital bike-sharing platforms powered by modern technologies have found use particularly among millenials who are increasingly more aware of the environment and health,  tech-savy, and appreciative of instant gratification offered. The city of London has one of the largest digital bike-sharing systems in the World known as Santander bikes with 783 docking stations as of today and 10 million annual bike trips. Transport for London (TfL) has made data on all public transport modes, including digital bike-sharing open through an API. In the following, I will use the bike-jouney data in conjuction with weather data to analyze, vizualize and provide insights on bike journeys in London throughout 2019 and analyze the impact of weather on the use of the London bikeshare system. 
 
 I provide the codes and technical details for generating the insights below [here](https://github.com/albagjonbalajdc/Modeling-bike-journeys-and-weather-in-London/blob/master/tfl_project_copy2.ipynb)
 
 <a name="data"></a>
-# Data
+### Data
 
   TfL makes available the historical bikesharing usage data (e.g. start and end time of the bike trip, bike id, and station name) in the form of csv files in the following [website](https://cycling.data.tfl.gov.uk). In addition, I use the [bike point API](https://api.tfl.gov.uk/swagger/ui/index.html?url=/swagger/docs/v1#!/BikePoint/BikePoint_GetAll) to add real time information on bike docks across London, including latitute, longitutde, capacity, and available bikes. The bike usage dataset includes 10,138,355 bike trips from Janaury 1, 2019 to December 31, 2019 with attributes for bike trip duration, start trip date and time, end trip date and time, start station id and end station id as in the table below. Hourly weather data from Janaury 1, 2019 to December 31, 2019 for temperature, precipitation, humidity, wind speed, and visibility were obtained from the [Dark Sky API](https://darksky.net/dev/account).
 
 <a name="exploratory"></a>
-# Exploratory Data Analysis of Bike Journeys
+### Exploratory Data Analysis of Bike Journeys
 
   I begin the analysis with the discovery of some general trends in the data which will inform the hypothesis creation and guide the analysis. 
 
@@ -41,7 +41,8 @@ I provide the codes and technical details for generating the insights below [her
 
   For the dependent variable analyzed, there was an average 2266 trips per hour with a standard deviation of 1304. The average trip duration was 19.6 minutes with a range of as short as 8 minutes to 514 minutes. Independent variables included both weather related variables and non-weather related control variables. London recorded a wide range of temperatures during 2019 spanning from -3.2 °C to 37 °C. The average humidity is London during 2019 was 65% and a standard deviation of 17%. The average wind speed was 8 MPH defined as a "gentle breeze". Rain in London was observed 16% of the year. 
 
-# Preliminary analysis of the relationship between bike journeys and weather 
+<a name="Preliminary analysis of the relationship between bike journeys and weather"></a>
+### Preliminary analysis of the relationship between bike journeys and weather 
 
   The relationship between daily number of bike trips and average daily temperature is depicted in the figure below. Bike trips pick up as the temperatures increase. We can notice a few outlier days explained by adverse weather impacts that day. June 12, 2019, for exmaple, only saw xx trips, because ... A drop in bike ridership can be seen during the period of extreme heat between July xx, 2019 and August xx, 2019. Days with low ridership can also be explained for reasons other than weather, such as only xx trips on Christmas Day.  
 
@@ -55,7 +56,8 @@ I provide the codes and technical details for generating the insights below [her
   
 Two dependent variables are analyzed: (1) average trip duration and (2) number of bike trips. To analyze the relationship between average trip duration (dependent variable) and weather (independent variable) I perform the ordinary least squares regression model. To analyze the impact of weather on number of bike trips, I perform a logistic regression model. Estimates of the parameteres in the average trip duration model are used to determine the change in trip duration in minutes associated with each parameter. In the logistic regression each estimate is associated with a xx percent change in number of bike trips. The regression results from the Ordinary Least Sqaures model are shown in Table 1. The Logistic regression model of number of trips is shown in Table 2. 
 
-# Analysis of results
+<a name="Analysis of regression results"></a>
+### Analysis of regression results
 
 Temperature enters the regression as a dummy variable in 5°C ranges as we don't expect the relationship between temperature and cycling behavior to be linear. Coefficients show that temperatures between -3 and through the 10°C range are all significantly correlated (p<.01) with shorter average trip duration compared to when the temperature is in the 10-15°C range, ceteris paribus. When temperatures range between -3 and 10°C, average trips times are 5.4 minutes as opposed to 17.8 minutes, holding all the other variables constant. Temperatures in the range 25-35°C were positively correlated with increasing trip durations, but not statistically significant.
 
