@@ -1,6 +1,7 @@
-##### Table of Contents  
-[Overview](#overview) 
-[Data](#data) 
+### Table of Contents  
+1. [Overview](#overview) 
+2. [Data](#data) 
+3. [Exploratory Data Analysis of Bike Journeys](#exploratory)
 
 <a name="overview"></a>
 # Overview
@@ -14,6 +15,7 @@ I provide the codes and technical details for generating the insights below [her
 
   TfL makes available the historical bikesharing usage data (e.g. start and end time of the bike trip, bike id, and station name) in the form of csv files in the following [website](https://cycling.data.tfl.gov.uk). In addition, I use the [bike point API](https://api.tfl.gov.uk/swagger/ui/index.html?url=/swagger/docs/v1#!/BikePoint/BikePoint_GetAll) to add real time information on bike docks across London, including latitute, longitutde, capacity, and available bikes. The bike usage dataset includes 10,138,355 bike trips from Janaury 1, 2019 to December 31, 2019 with attributes for bike trip duration, start trip date and time, end trip date and time, start station id and end station id as in the table below. Hourly weather data from Janaury 1, 2019 to December 31, 2019 for temperature, precipitation, humidity, wind speed, and visibility were obtained from the [Dark Sky API](https://darksky.net/dev/account).
 
+<a name="exploratory"></a>
 # Exploratory Data Analysis of Bike Journeys
 
   I begin the analysis with the discovery of some general trends in the data which will inform the hypothesis creation and guide the analysis. 
