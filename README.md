@@ -1,3 +1,8 @@
+##### Table of Contents  
+[Headers](#Overview) 
+
+## Headers
+
 # Overview
 
   Bike sharing systems have ploriferated in cities around the world as one of the most environmental friendly transport modes. These digital bike-sharing platforms powered by modern technologies have found use particularly among millenials who are increasingly more aware of the environment and health,  tech-savy, and appreciative of instant gratification offered. The city of London has one of the largest digital bike-sharing systems in the World known as Santander bikes with 783 docking stations as of today and 10 million annual bike trips. Transport for London (TfL) has made data on all public transport modes, including digital bike-sharing open through an API. In the following, I will use the bike-jouney data in conjuction with weather data to analyze, vizualize and provide insights on bike journeys in London throughout 2019 and analyze the impact of weather on the use of the London bikeshare system. 
