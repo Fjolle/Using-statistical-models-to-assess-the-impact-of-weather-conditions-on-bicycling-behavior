@@ -2,8 +2,9 @@
 1. [Overview](#overview) 
 2. [Data](#data) 
 3. [Exploratory Data Analysis of Bike Journeys](#exploratory)
-4. [Preliminary analysis of the relationship between bike journeys and weather](#Preliminary)
-5. [Analysis of regression results](#Analysis)
+4. [Descriptive to Predictive](#Predictive)
+5. [Preliminary analysis of the relationship between bike journeys and weather](#Preliminary)
+6. [Analysis of regression results](#Analysis)
 
 <a name="overview"></a>
 ### Overview
@@ -39,6 +40,7 @@ Distribution charts are a useful way to gain a comprehensive understaning of tre
 
 ![Distribution](https://github.com/albagjonbalajdc/Modeling-bike-journeys-and-weather-in-London/blob/master/distribution_bike_trips.png)
 
+<a name="Predictive"></a>
 ### Descriptive to Predictive
 
 One issue that impacts biking as a mode of transporation that doesn't impair other modes of transporation to the same extent, is weather conditions such as rainfall, snow, humidity, wind, and extreme temperatures. The research below analyzes the impact of weather on the use of London Santander bikesharing system. 
