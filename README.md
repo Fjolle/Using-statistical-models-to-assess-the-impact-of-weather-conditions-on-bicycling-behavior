@@ -4,7 +4,7 @@
 3. [Exploratory Data Analysis of Bike Journeys](#exploratory)
 4. [A View of the Largest Bike Stations](#stations)
 5. [Four Stations Standout: King's Cross, Waterloo, Hyde Park, and Kensington Gardens](#standout)
-6. [Time Race between Source and Receiving Bike Stations])(#race)
+6. [Time Race between Source and Receiving Bike Stations](#race)
 7. [Descriptive to Predictive](#Predictive)
 8. [Preliminary Analysis of the Relationship between Bike Journeys and Weather](#Preliminary)
 9. [Predicting the Impact of Weather on Bicycling Behavior](#Analysis)
