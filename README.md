@@ -25,7 +25,7 @@ Codes and technical details for obtaining the data can be found here [here](http
 I begin the analysis with the discovery of some general trends in the data which will inform the hypothesis creation and guide the analysis. Codes and technical details for obtaining the plots below can be found here [here]()
 
 <a name ="largest stations"></a>
-#### A View of the Largest Bike Stations
+### A View of the Largest Bike Stations
 
 Here I illustrate the ten largest bike stations in London in terms of bike capacity which is obtained by sorting the dataset by top counts and truncating it.
 
