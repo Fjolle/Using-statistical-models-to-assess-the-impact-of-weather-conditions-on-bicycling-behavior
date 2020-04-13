@@ -2,10 +2,11 @@
 1. [Overview](#overview) 
 2. [Data](#data) 
 3. [Exploratory Data Analysis of Bike Journeys](#exploratory)
-4. [A View of the Largest Bike Stations](#largest stations)
-4. [Descriptive to Predictive](#Predictive)
-5. [Preliminary Analysis of the Relationship between Bike Journeys and Weather](#Preliminary)
-6. [Predicting the Impact of Weather on Bicycling Behavior](#Analysis)
+4. [A View of the Largest Bike Stations](#stations)
+5. [Four Stations Standout: King's Cross, Waterloo, Hyde Park, and Kensington Gardens](#standout)
+6. [Descriptive to Predictive](#Predictive)
+7. [Preliminary Analysis of the Relationship between Bike Journeys and Weather](#Preliminary)
+8. [Predicting the Impact of Weather on Bicycling Behavior](#Analysis)
 
 <a name="overview"></a>
 ### Overview
@@ -24,12 +25,15 @@ Codes and technical details for obtaining the data can be found here [here](http
 
 I begin the analysis with the discovery of some general trends in the data which will inform the hypothesis creation and guide the analysis. Codes and technical details for obtaining the plots below can be found here [here]()
 
-<a name ="largest stations"></a>
-### A View of the Largest Bike Stations
+<a name="stations"></a>
+#### A View of the Largest Bike Stations
 
 Here I illustrate the ten largest bike stations in London in terms of bike capacity which is obtained by sorting the dataset by top counts and truncating it.
 
 ![Biggest bike stations](https://github.com/albagjonbalajdc/Modeling-bike-journeys-and-weather-in-London/blob/master/Unknown-2.png)
+
+<a name="standout"></a>
+#### Four Stations Standout: King's Cross, Waterloo, Hyde Park, and Kensington Gardens
 
 There are two stations that stand out as dominant sources of bike trips during the weekdays, that is King's Cross railway station and the London Waterloo railstation. In contrast, during weekends, most stations show little activitiy in terms of bike trips compared to weekdays, with the exception of Hyde Park and Kensington Gardens to a certain extent.Stations around Hyde Park and Kensignton Gardens are entertainment hubs for Londoners, explaining the large bike traffic on the weekend.To illustrate this, I aggregate the number of rentals per station, and segment bike rentals by weekday and weekend to obtain the graph below
 
