@@ -23,7 +23,7 @@
 <a name="exploratory"></a>
 ### Exploratory Data Analysis of Bike Journeys
 
-###### I begin the analysis with the discovery of some general trends in the data which will inform the hypothesis creation and guide the analysis. Codes and technical details for obtaining the plots below can be found here [here]()
+###### I begin the analysis with the discovery of some general trends in the data which will inform the hypothesis creation and guide the analysis. Codes and technical details for obtaining the figures below can be found here [here]()
 
 <a name="stations"></a>
 #### A View of the Largest Bike Stations
