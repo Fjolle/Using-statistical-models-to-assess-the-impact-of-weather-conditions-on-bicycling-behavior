@@ -55,7 +55,7 @@
 ###### For the dependent variable analyzed, there was an average 2266 trips per hour with a standard deviation of 1304. The average trip duration was 19.6 minutes with a range of as short as 8 minutes to 514 minutes. Independent variables included both weather related variables and non-weather related control variables. London recorded a wide range of temperatures during 2019 spanning from -3.2°C to 37°C. The average humidity in London during 2019 was 65% with a standard deviation of 17%. The average wind speed was 8 MPH defined as a "gentle breeze".
 
 | Dependent Vairable            | Mean                    | Std.Dev                  |Min                 |Max            |     
-|: ------------- :              |:------------:           | :-------------:          |:-------------:     |:-------------:| 
+| -------------                 |:------------:           | :-------------:          |:-------------:     |:-------------:| 
 | Trips per hour                | 1179                    | 1129                     |6                   | 5377          |     
 | Avg trip duration per hour    | 16.8                    | 4                        |8.11                | 70            | 
 | Average temperature per hour  | 12.2                    | 6                        |-2.95               | 36.9          | 
