@@ -44,7 +44,7 @@
 <a name="race2"></a>
 ### Bar Race for Destination Bike Station
 
-![Bar race chart 2](https://github.com/albagjonbalajdc/Modeling-bike-journeys-and-weather-in-London/blob/master/animation2.gif)
+![Bar race chart 2](https://github.com/albagjonbalajdc/A-model-of-bike-journeys-and-weather/blob/master/Plots/animation2.gif)
 
 <a name="distribution"></a>
 ### Bike Trips during Weekday and Weekend
