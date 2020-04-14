@@ -58,6 +58,8 @@
 | -------------                 |:-------------:          | :-------------:          |:-------------:     |:-------------:| 
 | Trips per hour                | 1179                    | 1129                     |6                   | 5377          |     
 | Avg trip duration per hour    | 16.8                    | 4                        |8.11                | 70            | 
+| Average temperature per hour  | 12.2                    | 6                        |-2.95               | 36.9          | 
+| Relative Humidity             | 0.72                    | 0.45                     |0                   | 1             | 
 
 <a name="Preliminary"></a>
 ### Preliminary Analysis of the Relationship between Bike Journeys and Weather 
