@@ -4,6 +4,7 @@
 3. [Exploratory Data Analysis of Bike Journeys](#exploratory)
 4. [A View of the most Frequented Bike Stations](#standout)
 5. [Time Race between Source and Destination Bike Stations](#race)
+6. [Bike Trips during Weekday and Weekend](#distribution)
 6. [Descriptive to Predictive](#Predictive)
 7. [Preliminary Analysis of the Relationship between Bike Journeys and Weather](#Preliminary)
 8. [Predicting the Impact of Weather on Bicycling Behavior](#Analysis)
@@ -40,9 +41,13 @@
 ![Bar race chart 1](https://github.com/albagjonbalajdc/Modeling-bike-journeys-and-weather-in-London/blob/master/animation.gif)
 
 ![Bar race chart 2](https://github.com/albagjonbalajdc/Modeling-bike-journeys-and-weather-in-London/blob/master/animation2.gif)
+
+<a name="distribution"></a>
+### Bike Trips during Weekday and Weekend
+
 ###### Distribution charts are a useful way to gain a comprehensive understaning of trends and outliers over time. The  graph below illustrates the distribution of bike rentals by day of the week and hour of the day. A distinct pattern can be seen between bike usage during the weekend and weekdays. During  weekdays, bike usage is highest between 7 and 9 in the morning and between 17 and 20 in the afternoon. Weekend bike usage peaks between noon and 14 in the afternoon. This pattern of bike usage could be explained by the fact that weekday bike usage is mostly associated with commuting to and from work, whereas weekend usage is mostly associated with midday leisure trips.   
 
-![Distribution](https://github.com/albagjonbalajdc/Modeling-bike-journeys-and-weather-in-London/blob/master/distribution_bike_trips.png)
+![Distribution](https://github.com/albagjonbalajdc/A-model-of-bike-journeys-and-weather/blob/master/Plots/distribution%20of%20bike%20trips%20by%20day%20and%20hour.png)
 
 <a name="Predictive"></a>
 ### Descriptive to Predictive
