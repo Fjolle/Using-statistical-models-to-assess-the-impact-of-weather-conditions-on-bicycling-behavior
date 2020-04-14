@@ -20,12 +20,12 @@
 
 ###### TfL makes available the historical bikesharing usage data (with attributes for bike trip duration, start trip date and time, end trip date and time, start station id and end station id) in the form of csv files in the following [website](https://cycling.data.tfl.gov.uk). In addition, I use the [Bike Point API](https://api.tfl.gov.uk/swagger/ui/index.html?url=/swagger/docs/v1#!/BikePoint/BikePoint_GetAll) to add real time information on bike docks across London, including latitute, longitutde, capacity, and available bikes. The bike usage dataset includes over 10 million bike trips from Janaury 1, 2019 to December 31, 2019. Hourly weather data from Janaury 1, 2019 to December 31, 2019 for temperature, precipitation, humidity, wind speed, and visibility were obtained from the [Dark Sky API](https://darksky.net/dev/account).
   
-###### Codes and technical details for obtaining the data can be found here [here](https://github.com/albagjonbalajdc/A-model-of-bike-journeys-and-weather/blob/master/Preparing%20the%20data.ipynb)
+###### Codes and technical details for obtaining the data can be found here [Preparing the data](https://github.com/albagjonbalajdc/A-model-of-bike-journeys-and-weather/blob/master/Preparing%20the%20data.ipynb)
 
 <a name="exploratory"></a>
 ### Exploratory Data Analysis of Bike Journeys
 
-###### I begin the analysis with the discovery of some general trends in the data which will inform the hypothesis creation and guide the analysis. Codes and technical details for obtaining the figures below can be found here [here]()
+###### I begin the analysis with the discovery of some general trends in the data which will inform the hypothesis creation and guide the analysis. Codes and technical details for obtaining the figures below can be found here [Visualizations](https://github.com/albagjonbalajdc/A-model-of-bike-journeys-and-weather/blob/master/Visualization.ipynb)
 
 <a name="stations"></a>
 ### A View of the most Frequented Bike Stations
