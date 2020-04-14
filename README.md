@@ -3,13 +3,11 @@
 2. [Data](#data) 
 3. [Exploratory Data Analysis of Bike Journeys](#exploratory)
 4. [A View of the most Frequented Bike Stations](#standout)
-5. [Bar Race for Source Bike Station](#race1)
-6. [Bar Race for Destination Bike Station](#race2)
-7. [Bike Trips during Weekday and Weekend](#distribution)
-8. [Descriptive to Predictive](#Predictive)
-9. [Preliminary Analysis of the Relationship between Bike Journeys and Weather](#Preliminary)
-10.[Impact of Heavy Showers on Bicycling Behavior](#rainy)
-11.[Predicting the Impact of Weather on Bicycling Behavior](#Analysis)
+5. [Bar Race for Source and Destination Stations](#race1)
+6. [Bike Trips during Weekday and Weekend](#distribution)
+7. [Preliminary Analysis of the Relationship between Bike Journeys and Weather](#Preliminary)
+8. [Impact of Heavy Showers on Bicycling Behavior](#rainy)
+9. [Descriptive to Predictive](#Predictive)
 
 <a name="overview"></a>
 ### Overview
@@ -38,13 +36,9 @@
 ###### This pattern is not surprising, King's Cross and Waterloo being large and important stations in the London transporation are dominant sources of bikes in the morning, whereas Bank, Holborn, Liverpool, and Soho stations are the largest receiving bike stations in the morning. These stations are located in the city center where activity peaks in the early morning hours, including the finance center and the Westminister government buildings. This relationship inverses in the evenings, when the two large railway stations become the largest receiving bike stations and the city center stations the largest source stations.This is best illustrated by the two bar race charts below which depict the top source and receiving stations by time of the day. 
 
 <a name="race1"></a>
-### Bar Race for Source Bike Station
+### Bar Race for Source and Destination Stations
 
 ![Bar race chart 1](https://github.com/albagjonbalajdc/A-model-of-bike-journeys-and-weather/blob/master/Plots/animation.gif)
-
-<a name="race2"></a>
-### Bar Race for Destination Bike Station
-
 ![Bar race chart 2](https://github.com/albagjonbalajdc/A-model-of-bike-journeys-and-weather/blob/master/Plots/animation2.gif)
 
 <a name="distribution"></a>
@@ -53,9 +47,6 @@
 ###### Distribution charts are a useful way to gain a comprehensive understaning of trends and outliers over time. The  graph below illustrates the distribution of bike rentals by day of the week and hour of the day. A distinct pattern can be seen between bike usage during the weekend and weekdays. During  weekdays, bike usage is highest between 7 and 9 in the morning and between 17 and 20 in the afternoon. Weekend bike usage peaks between noon and 14 in the afternoon. This pattern of bike usage could be explained by the fact that weekday bike usage is mostly associated with commuting to and from work, whereas weekend usage is mostly associated with midday leisure trips.   
 
 ![Distribution](https://github.com/albagjonbalajdc/A-model-of-bike-journeys-and-weather/blob/master/Plots/distribution%20of%20bike%20trips%20by%20day%20and%20hour.png)
-
-<a name="Predictive"></a>
-### Descriptive to Predictive
 
 ###### One issue that impacts biking as a mode of transporation that doesn't impair other modes of transporation to the same extent, is weather conditions such as rainfall, snow, humidity, wind, and extreme temperatures. The research below analyzes the impact of weather on the use of London Santander bikesharing system. 
 
@@ -78,8 +69,8 @@ Impact of Heavy Showers on Bicycling Behavior
   
 ###### Two dependent variables are analyzed: (1) average trip duration and (2) number of bike trips. To analyze the relationship between average trip duration (dependent variable) and weather (independent variable) I perform the ordinary least squares regression model. To analyze the impact of weather on number of bike trips, I perform a logistic regression model. Estimates of the parameteres in the average trip duration model are used to determine the change in trip duration in minutes associated with each parameter. In the logistic regression each estimate is associated with a xx percent change in number of bike trips. The regression results from the Ordinary Least Sqaures model are shown in Table 1. The Logistic regression model of number of trips is shown in Table 2. 
 
-<a name="Analysis"></a>
-### Predicting the Impact of Weather on Bicycling Behavior
+### <a name="Predictive"></a>
+### Descriptive to Predictive
 
 ###### Temperature enters the regression as a dummy variable in 5°C ranges as we don't expect the relationship between temperature and cycling behavior to be linear. Coefficients show that temperatures between -3 and through the 10°C range are all significantly correlated (p<.01) with shorter average trip duration compared to when the temperature is in the 10-15°C range, ceteris paribus. When temperatures range between -3 and 10°C, average trip times are 12.5 minutes as opposed to 17.8 minutes, holding all the other variables constant. Temperatures in the range 20-35°C were positively correlated with increasing trip durations, and are highly significant (p<.01). Average trip times are 14 minutes longer per trip when the temperatures range between 20-35°C, and trip duration increases the most when the temperatures are above 30°C.
 
