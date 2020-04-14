@@ -3,11 +3,12 @@
 2. [Data](#data) 
 3. [Exploratory Data Analysis of Bike Journeys](#exploratory)
 4. [A View of the most Frequented Bike Stations](#standout)
-5. [Time Race between Source and Destination Bike Stations](#race)
-6. [Bike Trips during Weekday and Weekend](#distribution)
-6. [Descriptive to Predictive](#Predictive)
-7. [Preliminary Analysis of the Relationship between Bike Journeys and Weather](#Preliminary)
-8. [Predicting the Impact of Weather on Bicycling Behavior](#Analysis)
+5. [Bar Race for Source Bike Station](#race1)
+6. [Bar Race for Destination Bike Station](#race2)
+7. [Bike Trips during Weekday and Weekend](#distribution)
+8. [Descriptive to Predictive](#Predictive)
+9. [Preliminary Analysis of the Relationship between Bike Journeys and Weather](#Preliminary)
+10.[Predicting the Impact of Weather on Bicycling Behavior](#Analysis)
 
 <a name="overview"></a>
 ### Overview
@@ -35,10 +36,13 @@
 
 ###### This pattern is not surprising, King's Cross and Waterloo being large and important stations in the London transporation are dominant sources of bikes in the morning, whereas Bank, Holborn, Liverpool, and Soho stations are the largest receiving bike stations in the morning. These stations are located in the city center where activity peaks in the early morning hours, including the finance center and the Westminister government buildings. This relationship inverses in the evenings, when the two large railway stations become the largest receiving bike stations and the city center stations the largest source stations.This is best illustrated by the two bar race charts below which depict the top source and receiving stations by time of the day. 
 
-<a name="race"></a>
-### Time Race between Source and Destination Bike Stations 
+<a name="race1"></a>
+### Bar Race for Source Bike Station
 
-![Bar race chart 1](https://github.com/albagjonbalajdc/Modeling-bike-journeys-and-weather-in-London/blob/master/animation.gif)
+![Bar race chart 1](https://github.com/albagjonbalajdc/A-model-of-bike-journeys-and-weather/blob/master/Plots/animation.gif)
+
+<a name="race2"></a>
+### Bar Race for Destination Bike Station
 
 ![Bar race chart 2](https://github.com/albagjonbalajdc/Modeling-bike-journeys-and-weather-in-London/blob/master/animation2.gif)
 
