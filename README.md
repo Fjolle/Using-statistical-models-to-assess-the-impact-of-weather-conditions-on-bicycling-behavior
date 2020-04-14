@@ -66,6 +66,12 @@
 
 ###### While a mean of 28,398 and median of 28,872 trips per day are made for all the users, in the rain, the average number of trips per day drops to 23,262. The differences between bike trips and temperature between rainy and non-rainy days can be seen in the scatter plot below. Given the genereous amount of cold rainy days in London it does not surprise to observe a reduced numbers of bike trips during colder months. There is also a trend that we observe where during rainy days daily bike trips show a larger oscilliation around the mean. It again suggests that, but does not prove, that on rainy days a fair share of London bikesharing users who are more elastic to "perturbations" from cold and rain choose alternative modes of transporation. We cannot conclude this definitelvely relying solely on the scatter plot since we haven't controlled for a number of variables that could impact the decline in bike trips during rainy days. We discipline this investigation more below by using a statistical method to prove this hypothesis. 
 
+| Tables        | Are           | Cool  |
+| ------------- |:-------------:| -----:|
+| col 3 is      | right-aligned | $1600 |
+| col 2 is      | centered      |   $12 |
+| zebra stripes | are neat      |    $1 |
+
 ![rainy](https://github.com/albagjonbalajdc/Modeling-bike-journeys-and-weather-in-London/blob/master/scatterplot.png)
 
 ###### Hourly weather observations for temperature, rain, and humidity are merged with the hourly bike usage data. Bike trips were collapsed by hour, obtaining the sum of bike trips and average duration of trips per hour. I use a statistical model to analyze the bicycling behavior under different weather conditions in London while controlling for a range of variables. Average trip per hour was calculated by dividing hourly duration by hourly trips. Dummy variables were created for weather events (precipitation above the mean, humidity above the mean, wind speed above the mean, holidays/weekend, and peak travel hours). Temperature was also recorded into 5-degree-bins and converted to dummy variables. Dummy variables were also created for month between January-December 2019. January 2019 served as a reference group for the month dummy. Temperature 10-15°C served as a reference group for temperature bin dummy variables.
