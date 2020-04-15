@@ -79,7 +79,7 @@ The relationship between daily number of bike trips and average daily temperatur
 
 
 | Avg bike trips/day| Avg bike trips/rainy day| 
-| -------------     |:-------------:          | 
+|:-------------     |:-------------           | 
 | 28,389            | 23,262                  | 
 
 
