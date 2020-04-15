@@ -7,6 +7,7 @@
 6. [Bike Trips during Weekday and Weekend](#distribution)
 7. [Preliminary Analysis of the Relationship between Bike Journeys and Weather](#Preliminary)
 8. [Impact of Heavy Showers on Bicycling Behavior](#rainy)
+9. [Approach to Analysis](#approach)
 9. [Descriptive to Predictive](#Predictive)
 
 <a name="overview"></a>
