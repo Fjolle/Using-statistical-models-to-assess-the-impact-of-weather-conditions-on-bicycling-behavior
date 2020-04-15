@@ -72,7 +72,7 @@ For the dependent variable analyzed, there was an average 2266 trips per hour wi
 
 The relationship between daily number of bike trips and average daily temperature is depicted in the figure below. Bike trips pick up as the temperatures increase, and reach the peak during the warmest months, and decelerate gradually as it cools off during Autumn and Winter period. We can notice a few outlier days explained by adverse weather impacts that day. June 10, 2019, for exmaple, only saw 13,223 trips, from 28,898 trips in the previous day due to heavy showers that day in London. Days with low ridership can also be explained for reasons other than weather, such as only 5,583 trips on December 26,2019, the day after Christmas Day.  Surprisingly, against my expectation, we notice a large increase in bike ridership during the period of extreme heat between July 2019 and August 2019, something that we investigate in the regression analysis below by controlloing for the impact of season on bike ridership.
 
-![correlation](https://github.com/albagjonbalajdc/Modeling-bike-journeys-and-weather-in-London/blob/master/relationship%20between%20bike%20usage%20and%20temperature.png)
+![correlation](https://github.com/albagjonbalajdc/A-model-of-bike-journeys-and-weather/blob/master/Plots/daily%20scatterplot%20between%20temperature%20and%20bike%20trips.png)
 
 <a name="rainy"></a>
 ### Impact of Heavy Showers on Bicycling Behavior
