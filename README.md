@@ -85,6 +85,9 @@
 <a name="approach"></a>
 ### Approach to Analysis
 
+###### Codes and technical details for running the regressions below can be found here [Regression Analysis]
+(https://github.com/albagjonbalajdc/A-model-of-bike-journeys-and-weather/blob/master/Regression.ipynb)
+
 ###### Hourly weather observations for temperature, rain, and humidity are merged with the hourly bike usage data. Bike trips were collapsed by hour, obtaining the sum of bike trips and average duration of trips per hour. I use a statistical model to analyze the bicycling behavior under different weather conditions while controlling for a range of variables. Average trip per hour was calculated by dividing hourly duration by hourly trips. Dummy variables were created for weather events (precipitation above the mean, humidity above the mean, wind speed above the mean, holidays/weekend, and peak travel hours). Temperature was also recorded into 5-degree-bins and converted to dummy variables. Dummy variables were also created for month between January-December 2019. January 2019 served as a reference group for the month dummy. Temperature 10-15°C served as a reference group for temperature bin dummy variables.
   
 ###### Two dependent variables are analyzed: (1) average trip duration and (2) number of bike trips. To analyze the relationship between average trip duration (dependent variable) and weather (independent variable) I perform the ordinary least squares regression model (OLS). To analyze the impact of weather on number of bike trips, I perform a logistic regression model. Estimates of the parameteres in the average trip duration model are used to determine the change in trip duration in minutes associated with each parameter. In the logistic regression, each estimate is associated with a xx percent change in number of bike trips. The regression results from the OLS model are shown in Table 1. The Logistic regression model of number of trips is shown in Table 2. 
