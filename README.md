@@ -135,7 +135,9 @@ We need to specify the parameter α in the model. To do so, we follow the Camero
 
 #### Table 3. Ngeative Binomial regression summary
 
-
+<p align="center"> 
+<img src="https://github.com/albagjonbalajdc/A-model-of-bike-journeys-and-weather/blob/master/Plots/Negative%20Binomial%20results.png">
+</p>
 
 
 
