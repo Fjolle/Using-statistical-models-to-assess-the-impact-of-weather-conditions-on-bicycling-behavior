@@ -123,13 +123,7 @@ We determine the adequacy of the Negative Binomial regression using the indicato
 #### Poisson residuals and dispersion
 
 <p align="center"> 
-<img src="https://github.com/albagjonbalajdc/A-model-of-bike-journeys-and-weather/blob/master/Plots/poisson%20results.png">
+<img src="https://github.com/albagjonbalajdc/A-model-of-bike-journeys-and-weather/blob/master/Plots/Residual%20vs%20Mean%20(Poisson).png">
 </p>
 
-
 The low performance of the Poisson model proved inadequate since our data violates the mean=variance assumption. Therefore, we need a model that does not make the equi-dispersion assumption. One such model in the family of the Poisson regression is the Negative Binomial regression which we explore below. 
-
-
-
-
-
