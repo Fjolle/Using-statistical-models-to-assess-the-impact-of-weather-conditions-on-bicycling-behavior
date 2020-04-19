@@ -113,3 +113,7 @@ The output from the Poisson regression is shown in the table below.
 
 #### Table 2. Poisson regression summary
 
+<p align="center"> 
+<img src="https://github.com/albagjonbalajdc/A-model-of-bike-journeys-and-weather/blob/master/Plots/poisson%20results.png">
+</p>
+
