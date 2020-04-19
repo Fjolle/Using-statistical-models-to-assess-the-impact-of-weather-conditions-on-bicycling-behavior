@@ -131,7 +131,7 @@ The low performance of the Poisson model proved inadequate since our data violat
 The Negative Binomial regression uses a continous positive dispersion parameter,α which specifies the extent by which the distributions variance exceeds the mean. We can express the variance from the model with the equation
 σ2=μ+αμ^2.
 
-We need to specify the parameter α in the model. To do so, we follow the [Cameron and Trivedi test] (https://www.sciencedirect.com/science/article/abs/pii/030440769090014K) for under- or overdispersion of a Poisson model. To perform this test we take the fitted means μ from the Poisson regression and perform an OLS regression without an interecept using the equation ((yi−μi)2−yi)/μi=αμi+ϵi, where the left-hand side is the independent variable, α is the unknown coefficient and ϵ is the error term. We will prove below that the estimated α term is a more reliable indicator than the Pearson statistic in the Poisson regression.  
+We need to specify the parameter α in the model. To do so, we follow the [Cameron and Trivedi test (https://www.sciencedirect.com/science/article/abs/pii/030440769090014K) for under- or overdispersion of a Poisson model. To perform this test we take the fitted means μ from the Poisson regression and perform an OLS regression without an interecept using the equation ((yi−μi)2−yi)/μi=αμi+ϵi, where the left-hand side is the independent variable, α is the unknown coefficient and ϵ is the error term. We will prove below that the estimated α term is a more reliable indicator than the Pearson statistic in the Poisson regression.  
 
 #### Table 3. Negative Binomial regression summary
 
