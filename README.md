@@ -146,8 +146,5 @@ Similarly, the scatterplot between fitted mean and Pearson residuals shows subst
 #### Negative Binomial residuals and dispersion
 
 <p align="center"> 
-<img src="https://github.com/albagjonbalajdc/A-model-of-bike-journeys-and-weather/blob/master/Plots/Negative%20Binomial%20results.png">
+<img src="https://github.com/albagjonbalajdc/A-model-of-bike-journeys-and-weather/blob/master/Plots/Residual%20vs%20Mean%20(Negative%20Binomial).png">
 </p>
-
-
-
