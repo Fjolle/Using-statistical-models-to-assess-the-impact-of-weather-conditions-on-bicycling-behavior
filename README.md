@@ -141,7 +141,7 @@ We need to specify the parameter α in the model. To do so, we follow the [Camer
 
 The information in the upper section of Table 3 indicates a substantially better fit using the Negative Binomial regression compared to Poisson regression implied by a larger value for the log-likelihood and a substantially lower  Pearson chi2 / Df Residuals ratio, 2.25.
 
-Similarly, the scatterplot between fitted mean and Pearson residuals shows substantially lower dispersion, where the maximum value for the standardized deviance residual is 17.5 as compared to 200 for the Poisson regression. The model still has room for improvement and that woudl require better predictors. 
+Similarly, the scatterplot between fitted mean and Pearson residuals shows substantially lower dispersion, where the maximum value for the standardized deviance residual is 17.5 as compared to 200 for the Poisson regression. The model still has room for improvement and that would require better predictors. 
 
 #### Negative Binomial residuals and dispersion
 
