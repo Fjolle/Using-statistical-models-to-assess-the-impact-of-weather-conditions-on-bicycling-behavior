@@ -149,4 +149,11 @@ Similarly, the scatterplot between fitted mean and Pearson residuals shows subst
 <img src="https://github.com/albagjonbalajdc/A-model-of-bike-journeys-and-weather/blob/master/Plots/Residual%20vs%20Mean%20(Negative%20Binomial).png">
 </p>
 
+We use the model trained on the 80% of the dataset to make predictions and determine how well it fits the real data on the 20% of the dataset and generate the graph below between predicted bike trips mean and the actual bike trips mean. Here we can notice that the predicted means do not follow the actual means and therefore the model was not able to generalize very well.
+
+<p align="center"> 
+<img src="">
+</p>
+
+
 Parameters estiamtes for temperature in the Negative Binomial regression model are highly statistically significant (p<.01)  and show that bike trips decrease as temperatures decrease, but also decrease above 30°C, relative to the reference category (10°C-15°C range). We calculate the Incident Rate Ratios (IRR) by exponentiating the parameters of the model, which represent the incremental change in trip frequency associated with each unit change in the parameters. Parameter estimates for Humidity and Rain are also negative in this model and statistically significant. Bike trip frequency is reduced by 0.9 when it is raining and by and 0.5 when it is very humid. The dummy control for peak travel times shows that bike usage is higher during peak hours by 3.4 bike trips. Usage on weekends and holidays statistically different from weekdays is associated with a reduction in bike trips by 0.86 and 0.82.
