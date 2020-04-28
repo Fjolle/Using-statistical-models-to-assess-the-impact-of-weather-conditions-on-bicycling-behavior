@@ -21,7 +21,7 @@ Bike sharing systems have proliferated in cities around the world as one of the 
 
 #### Dataset and Code
 [Click here for bike, weather data and code]
-()
+(https://github.com/albagjonbalajdc/Using-statistical-models-to-assess-the-impact-of-weather-conditions-on-bicycling-behavior)
 
 <a name="data"></a>
 ### Data
