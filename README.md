@@ -117,7 +117,7 @@ The output from the Poisson regression is shown in the table below.
 #### Table 2. Poisson regression summary
 
 <p align="center"> 
-<img src="https://github.com/albagjonbalajdc/A-model-of-bike-journeys-and-weather/blob/master/Plots/poisson%20results.png">
+<img src="https://github.com/albagjonbalajdc/Using-statistical-models-to-assess-the-impact-of-weather-conditions-on-bicycling-behavior/blob/master/Plots/Poisson%20regression%20results.png">
 </p>
 
 We determine the adequacy of the Poisson regression using the indicators in the upper part of Table 2. Specifically, we are interested in the residuals, which is an indication of the amount by which independent fitted observations differ from their real means. The sum of the squares of the residuals is used to assess the fit of the model, specifically the Pearson chi2 in the lower right side of the upper table. To better understand how well the Poisson model has fitted the bike data, we plot the Pearson residuals against their fitted means in the figure below. When the data follows a Poisson distribution the ratio Pearson chi2/Df residuals is approximately 1. A ratio below 1 indicates under-dispersion and more than 1 implies over-dispersion. This figure shows that the Poisson model is a poor fitting model for our bike data since the majority of the data points is largely dispersed between -50 and 90. The Pearson chi2/Df residuals ratio in our model is 467, suggesting over-dispersion. 
