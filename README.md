@@ -8,7 +8,7 @@
 7. [Preliminary Analysis of the Relationship between Bike Journeys and Weather](#Preliminary)
 8. [Impact of Heavy Showers on Bicycling Behavior](#rainy)
 9. [Approach to Analysis](#approach)
-9. [Descriptive to Predictive](#Predictive)
+9. [Descriptive to Predictive](#predictive)
 10.[Interpretation of OLS model results](#ols)
 11.[Evaluation of the Poisson model](#poisson)
 12.[Evaluation and interpretation of the Negative Binomial model results](#binomial)
@@ -97,7 +97,7 @@ Hourly weather observations for temperature, rain, humidity, and visibility are 
 
 Two dependent variables are analyzed: (1) average trip duration and (2) number of bike trips. To analyze the relationship between average trip duration (dependent variable) and weather conditions (independent variable) I perform the ordinary least squares regression model (OLS). To analyze the impact of weather on number of bike trips, I perform a Poisson and Negative Binomial regression model. Estimates of the parameters in the average trip duration model are used to determine the change in trip duration in minutes associated with each parameter. In the negative binomial regression, the parameters represent the incremental change in bike trips frequency associated with each unit change in the parameters. The regression results from the OLS model are shown in Table 1. The Poisson and Negative Binomial regression model of number of trips is shown in Table 2 and Table 3. 
 
-### <a name="Predictive"></a>
+### <a name="predictive"></a>
 ### Descriptive to Predictive
 ### <a name="ols"></a>
 #### Interpretation of OLS model results
