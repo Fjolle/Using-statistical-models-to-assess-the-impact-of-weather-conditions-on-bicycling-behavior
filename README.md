@@ -9,10 +9,10 @@
 8. [Impact of Heavy Showers on Bicycling Behavior](#rainy)
 9. [Approach to Analysis](#approach)
 9. [Descriptive to Predictive](#predictive)
-10.[Interpretation of OLS model results](#ols)
-11.[Evaluation of the Poisson model](#poisson)
-12.[Evaluation and interpretation of the Negative Binomial model results](#binomial)
-13.[Model Evaluation on Test Data Set](#evaluation)
+10. [Interpretation of OLS model results](#ols)
+11. [Evaluation of the Poisson model](#poisson)
+12. [Evaluation and interpretation of the Negative Binomial model results](#binomial)
+13. [Model Evaluation on Test Data Set](#evaluation)
 
 <a name="introduction"></a>
 ### Introduction
