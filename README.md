@@ -138,7 +138,7 @@ The Negative Binomial regression uses a continuous positive dispersion parameter
 #### Table 3. Negative Binomial regression summary
 
 <p align="center"> 
-<img src="https://github.com/albagjonbalajdc/A-model-of-bike-journeys-and-weather/blob/master/Plots/Negative%20Binomial%20results.png">
+<img src="https://github.com/albagjonbalajdc/Using-statistical-models-to-assess-the-impact-of-weather-conditions-on-bicycling-behavior/blob/master/Plots/Negative%20Binomial%20regression%20results.png">
 </p>
 
 The information in the upper section of Table 3 indicates a substantially better fit using the Negative Binomial regression compared to Poisson regression implied by a larger value for the log-likelihood and a substantially lower Pearson chi2 / Df Residuals ratio, 2.25.
