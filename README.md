@@ -1,5 +1,5 @@
-### Table of Contents  
-1. [Overview](#overview) 
+### Article Outline  
+1. [Introduction](#introduction) 
 2. [Data](#data) 
 3. [Exploratory Data Analysis of Bike Journeys](#exploratory)
 4. [A View of the most Frequented Bike Stations](#standout)
@@ -10,10 +10,10 @@
 9. [Approach to Analysis](#approach)
 9. [Descriptive to Predictive](#Predictive)
 
-<a name="overview"></a>
-### Overview
+<a name="introduction"></a>
+### Introduction
 
-Bike sharing systems have proliferated in cities around the world as one of the most environmental friendly transport modes. These digital bike-sharing platforms powered by modern technologies have found use particularly among millennials who are increasingly more aware of their environment and health, are tech-savvy, and appreciative of instant gratification offered by the ultra-convenience of bikes. The city of London has one of the largest digital bike-sharing systems in the world operated by Santander with 783 bike docking stations as of today and 10 million annual bike trips. Transport for London (TfL) has made data on all public transport modes, including digital bike-sharing available through an API. In the following ReadMe, I will use the bike-journey data in conjunction with weather data to visualize and provide insights on bicycling behavior in London and analyze the impact of weather on the use of the London bike-sharing system. 
+Bike sharing systems have proliferated in cities around the world as one of the most environmental friendly transport modes. These digital bike-sharing platforms powered by modern technologies have found use particularly among millennials who are increasingly more aware of their environment and health, are tech-savvy, and appreciative of instant gratification offered by the ultra-convenience of bikes. The city of London has one of the largest digital bike-sharing systems in the world operated by Santander with 783 bike docking stations as of today and 10 million annual bike trips. Transport for London (TfL) has made data on all public transport modes, including digital bike-sharing available through an API. In the following blog, I will use the bike-journey data in conjunction with weather data to generate insights on bicycling behavior in London  and fit an OLS, Poisson, and Negative Binomial machine learning model that accurately predicts the impact of weather on the use of the London bike-sharing system. I analyze the influence of significant factors that affect bicycling. After training the model, I also test the model's strength on generalizing to an unseen dataset.   
 
 <a name="data"></a>
 ### Data
@@ -95,6 +95,9 @@ Two dependent variables are analyzed: (1) average trip duration and (2) number o
 
 ### <a name="Predictive"></a>
 ### Descriptive to Predictive
+### <a name="OLS"></a>
+#### Interpretation of OLS model results
+
 Temperature enters the OLS and the Negative Binomial regression as a dummy variable in 5°C ranges as we don't expect the relationship between temperature and cycling behavior to be linear. Coefficients show that temperatures between -3°C and through the 10°C range are all highly significantly correlated (p<.01) with shorter average trip duration compared to when the temperature is in the 10°C-15°C range, ceteris paribus. When temperatures range between -3°C and 10°C, average trip times are 12.5 minutes as opposed to 17.8 minutes, holding all the other variables constant. Temperatures in the range 20°C-35°C were positively correlated with increasing trip durations, and are highly significant (p<.01). Average trip times are 14 minutes longer per trip when the temperatures range between 20°C-35°C, and trip duration increases the most when the temperatures are above 30°C.
 
 #### Table 1. OLS regression summary
@@ -103,6 +106,9 @@ Temperature enters the OLS and the Negative Binomial regression as a dummy varia
 </p>
 
 Controls for month of the year are included in both models, in order to control for the impact of the seasonal pattern on the temperature. From these results, it is clear that there is variation in length of trips dependent on temperature with both decreasing when it gets colder and increasing as it gets warmer. Other variables also show association with bicycle usage and trip duration. Parameter estimates of humidity, rainfall, and wind speed are statistically significant and negative.The magnitude in trip duration for humidity, rainfall, and wind speed is -1.42 minutes, -1.37 minutes, and -0.60 minutes per trip, respectively. Reduction in trip duration during rainfall are less than in very cold temperatures. The impact of higher wind speed is considerably less than that of other weather conditions. Another control variable is a dummy for peak travel times which shows that bike trips are shorter than off-peak times by 1.3 minutes per trip. Bike trip duration during weekends and holidays is statistically different than on weekdays, and trips are longer by 2.9 and 5.9 minutes per trip, respectively. The later confirms the hypothesis that during weekend/holidays trips are more recreational in nature.
+
+### <a name="Poisson"></a>
+#### Evaluation of the Poisson model
 
 Now we turn to the analysis of the dependent variable on bike trip counts. For our bike trip counts data an appropriate model is a discrete probability distribution, of which Poisson distribution is the simplest. We consider the count of bike trips per hour to be a random variable from a Poisson distribution whose mean rate is influenced by a range of variables same as in the OLS model above (Table 1). When modeling count data, an OLS regression is not appropriate since it requires the dependent variable to be a continuous quantity without limits on it range. However, count data cannot be negative and thus discrete probability distribution is a better fit. We begin by applying the Poisson regression. One important assumption of the Poisson distribution is that the variance of a random variable is equal to the mean. This should also be true for the data on count of bike trips if the data follows a Poisson distribution. In cases when the variance exceeds the mean indicating over-dispersion, the data violates the Poisson distribution assumptions, leading to underestimated standard errors. This can arise when variables with important explanatory power are excluded from the model for whatever reason. The regression could also suffer from under-dispersion, that is when the variance is smaller than the mean, but this is observed less commonly. The output from the Poisson regression is shown in the table below. 
 
@@ -122,7 +128,10 @@ We determine the adequacy of the Poisson regression using the indicators in the 
 <img src="https://github.com/albagjonbalajdc/A-model-of-bike-journeys-and-weather/blob/master/Plots/Residual%20vs%20Mean%20(Poisson).png">
 </p>
 
-The low performance of the Poisson model proved inadequate since our data violates the mean equals variance assumption. Therefore, we need a model that does not make the equi-dispersion assumption. One such model in the family of the Poisson regression is the Negative Binomial regression which we explore below.
+The low performance of the Poisson model proved inadequate since our data violates the mean equals variance assumption. Therefore, we need a model that does not make the equi-dispersion assumption. One such model in the family of the Poisson regression is the Negative Binomial regression to which we turn now.
+
+### <a name="Binomial"></a>
+#### Evaluation and interpretation of the Negative Binomial model results
 
 The Negative Binomial regression uses a continuous positive dispersion parameter, α which specifies the extent by which the distributions variance exceeds the mean. We can express the variance from the model with the equation σ2=μ+αμ^2. We need to specify the parameter α in the model. To do so, we follow the Cameron and Trivedi test for under- or over-dispersion of a Poisson model. To perform this test we take the fitted means μ from the Poisson regression and perform an OLS regression without an intercept using the equation ((yi−μi)2−yi)/μi=αμi+ϵi, where the left-hand side is the independent variable, α is the unknown coefficient and ϵ is the error term. We will prove below that the estimated α term is a more reliable indicator than the Pearson statistic in the Poisson regression.
   
@@ -141,6 +150,9 @@ Similarly, the scatterplot between fitted mean and Pearson residuals shows subst
 <p align="center"> 
 <img src="https://github.com/albagjonbalajdc/A-model-of-bike-journeys-and-weather/blob/master/Plots/Residual%20vs%20Mean%20(Negative%20Binomial).png">
 </p>
+
+### <a name="evaluation"></a>
+#### Model Evaluation on Test Data Set
 
 We use the model trained on the 80% of the dataset to make predictions and determine how well it fits the real data on the 20% of the dataset and generate the graph below between predicted mean bike trips and the actual mean bike trips. Here we can notice that the predicted means do not follow the actual means and therefore the model was not able to generalize very well.
 
