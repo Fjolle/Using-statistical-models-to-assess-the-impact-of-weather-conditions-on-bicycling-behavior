@@ -20,7 +20,7 @@
 Bike sharing systems have proliferated in cities around the world as one of the most environmental friendly transport modes. These digital bike-sharing platforms powered by modern technologies have found use particularly among millennials who are increasingly more aware of their environment and health, are tech-savvy, and appreciative of instant gratification offered by the ultra-convenience of bikes. The city of London has one of the largest digital bike-sharing systems in the world operated by Santander with 783 bike docking stations as of today and 10 million annual bike trips. Transport for London (TfL) has made data on all public transport modes, including digital bike-sharing available through an API. In the following blog, I will use the bike-journey data in conjunction with weather data to generate insights on bicycling behavior in London  and fit an OLS, Poisson, and Negative Binomial machine learning model that accurately predicts the impact of weather on the use of the London bike-sharing system. I analyze the influence of significant factors that affect bicycling. After training the model, I also test the model's strength on generalizing to an unseen dataset. 
 
 #### Dataset and Code
-[Click here for bike, weather data and code](https://github.com/albagjonbalajdc/Using-statistical-models-to-assess-the-impact-of-weather-conditions-on-bicycling-behavior)
+[Click here for bike, weather data, and code](https://github.com/albagjonbalajdc/Using-statistical-models-to-assess-the-impact-of-weather-conditions-on-bicycling-behavior)
 
 <a name="data"></a>
 ### Data
