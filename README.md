@@ -102,7 +102,7 @@ Temperature enters the OLS and the Negative Binomial regression as a dummy varia
 
 #### Table 1. OLS regression summary
 <p align="center"> 
-<img src="https://github.com/albagjonbalajdc/A-model-of-bike-journeys-and-weather/blob/master/Plots/OLS%20regression%20results.png">
+<img src="https://github.com/albagjonbalajdc/Using-statistical-models-to-assess-the-impact-of-weather-conditions-on-bicycling-behavior/blob/master/Plots/OLS%20regression%20results.png">
 </p>
 
 Controls for month of the year are included in both models, in order to control for the impact of the seasonal pattern on the temperature. From these results, it is clear that there is variation in length of trips dependent on temperature with both decreasing when it gets colder and increasing as it gets warmer. Other variables also show association with bicycle usage and trip duration. Parameter estimates of humidity, rainfall, and wind speed are statistically significant and negative.The magnitude in trip duration for humidity, rainfall, and wind speed is -1.42 minutes, -1.37 minutes, and -0.60 minutes per trip, respectively. Reduction in trip duration during rainfall are less than in very cold temperatures. The impact of higher wind speed is considerably less than that of other weather conditions. Another control variable is a dummy for peak travel times which shows that bike trips are shorter than off-peak times by 1.3 minutes per trip. Bike trip duration during weekends and holidays is statistically different than on weekdays, and trips are longer by 2.9 and 5.9 minutes per trip, respectively. The later confirms the hypothesis that during weekend/holidays trips are more recreational in nature.
