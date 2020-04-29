@@ -27,7 +27,7 @@ Bike sharing systems have proliferated in cities around the world as one of the 
 
 Transport for London (TfL) makes available the historical bike-sharing usage data (with attributes for bike trip duration, start trip date and time, end trip date and time, start station id and end station id) in the form of CSV files in the TfL website. In addition, I use the Bike Point API to add real time information on bike docks across London, including latitude, longitude, capacity, and available bikes. The bike usage dataset includes over 10 million bike trips from Janaury 1, 2019 to December 31, 2019. Hourly weather data from Janaury 1, 2019 to December 31, 2019 for temperature, precipitation, humidity, wind speed, and visibility were obtained from the Dark Sky API.
   
-_Codes and technical details for obtaining the data can be found here_ [Preparing the data](https://github.com/albagjonbalajdc/Using-statistical-models-to-assess-the-impact-of-weather-conditions-on-bicycling-behavior/blob/master/Preparing_the_data.ipynb)
+_Codes and technical details for obtaining the data can be found here_ [Preparing the data](https://github.com/albagjonbalajdc/Using-statistical-models-to-assess-the-impact-of-weather-conditions-on-bicycling-behavior/blob/master/Preparing%20the%20data.ipynb)
 
 <a name="exploratory"></a>
 ### Exploratory Data Analysis of Bike Journeys
